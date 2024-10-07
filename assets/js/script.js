@@ -59,19 +59,19 @@ ad:"Elmar",
     isEducated: true,
     age: 19
    
-   },
+   }]
 
-//    Array methods (W3 school-da ketodlara bxmaq olar) - Push pop ansaq kvadrat moterizenin icinde yazilir
+//    Array methods (W3 school-da ketodlara baxmaq olar) - Push pop ansaq kvadrat moterizenin icinde yazilir
 //    consol.log () bize sehflere baxmaq ucun lazim olur - node ile terminaldan baxmaq
 
     telebeler.push ({
     ad: "Anvar", 
     soyad: "Khalid", 
     education: "ADA University", 
-    tehsillidirMi: true, 
+    isEducated: false, 
     age: 27
 
-   }),
+   })
 
     
    const tbodyTeqi = document.querySelector ("tbody")
@@ -85,7 +85,7 @@ for(let i=0; i<telebeler. length; i++) {
     <td>${telebeler[i].ad} </td>
     <td>${telebeler[i].soyad}</td>
     <td>${telebeler[i].education}</td>
-    <td>${telebeler[i].tehsillidirMi ? '<span class="text-success">Tehsil alir</span>' : '<span class="text-danger">Akademiyadan xaric olu</span>' }</td>
+    <td>${telebeler[i].isEducated ? '<span class="text-success">Tehsil alir</span>' : '<span class="text-danger">Akademiyadan xaric olundu</span>' }</td>
     <td>${telebeler[i].age}</td>
     </tr>`
 }
@@ -94,16 +94,15 @@ for(let i=0; i<telebeler. length; i++) {
 // cut dirnaq icerisinde cut dirnaq yazmaq olmaz, ferqli dirnaqda yazilmalidir
 
 // if default olaraq true-dur
-if(telebeler[i].tehsillidirMi){
-console. log("tehsillidir")
-}
+// if(telebeler[i].tehsillidirMi){
+// console. log("tehsillidir")
+// }
 
-else {
-    console.log("tehsilli deyil")
-}
+// else {
+//     console.log("tehsilli deyil")
+// }
 
 // one line killer
 // ? if-i bildirir, : else-i bildirir
-telebeler[i].tehsillidirMi ? console. log("tehsilli deyil") : console.log("tehsilli deyil")
+// telebeler[i].tehsillidirMi ? console. log("tehsillidir") : console.log("tehsillidir")
 
-]
